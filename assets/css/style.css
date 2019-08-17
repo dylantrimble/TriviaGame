@@ -63,12 +63,24 @@ label {
 #timesUp {
     display: none;
     background-color: aqua;
-    background-repeat: no-repeat;
     width: 35%;
     margin: 0 auto;
     padding: 2%;
     margin-top: 15%;
     font-size: 21px;
+}
+
+.up {
+    color: red;
+}
+
+.timeRemain {
+    padding: 2%;
+    color: red;
+}
+
+.timeRemain #time-remain {
+    font-size: 60px;
 }
 
 body .container {
@@ -82,6 +94,15 @@ body .container {
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.questions {
+    font-size: 25px;
+}
+
+.ques,
+label {
+    padding: 1%;
 }
 
 header {
