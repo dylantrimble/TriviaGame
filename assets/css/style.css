@@ -1,17 +1,4 @@
 body {
-    background-image: url("../images/hksBackGround.jpg");
-}
-.box {
-    background-color: aqua;
-    margin: 10px;
-    width: 1200px;
-    height: 2050px;
-    position: relative;
-    left: 140px;
-    top: 60px;
-}
-
-body {
     background-image: url('../images/hksBackGround.jpg');
     font-family: 'Anton', sans-serif;
     color: black;
