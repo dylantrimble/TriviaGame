@@ -1,0 +1,104 @@
+body {
+    background-image: url("../images/hksBackGround.jpg");
+}
+.box {
+    background-color: aqua;
+    margin: 10px;
+    width: 1200px;
+    height: 2050px;
+    position: relative;
+    left: 140px;
+    top: 60px;
+}
+
+body {
+    background-image: url('../images/hksBackGround.jpg');
+    font-family: 'Anton', sans-serif;
+    color: black;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 60px;
+    color: orange;
+}
+
+#splashscreen {
+    background-color: aqua;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: relative;
+    top: 100px;
+}
+
+.black-background {
+    background-color: #000000;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.splashBox {
+    margin: 0;
+    text-align: center;
+    padding: 4%;
+}
+
+.splashBox2 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+}
+
+.wrongBox {
+    margin: 0 auto;
+    text-align: center;
+    padding: 4%;
+}
+
+label {
+    color: orange;
+}
+
+#answerScreen {
+    display: none;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 21px;
+}
+
+#timesUp {
+    display: none;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    width: 35%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 21px;
+}
+
+body .container {
+    background-color: aqua;
+    height: 100%;
+    text-align: center;
+    display: none;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header {
+    font-size: 60px;
+    color: black;
+    margin-top: 2%;
+}
