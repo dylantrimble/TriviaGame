@@ -76,7 +76,7 @@ var questions = [{
 var labels = ["first", "second", "third", "forth"];
 
 
-var startGame = $("#start-btn").on('click', function () {
+var startGame = $(".start-btn").on('click', function () {
     $(this).parent().hide();
     $('.container').show();
     countdown(120);
