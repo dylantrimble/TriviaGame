@@ -71,7 +71,7 @@ var questions = [{
     correct: "280hp",
     divClass: ".gentleman"
 }
-] 
+]
 
 var labels = ["first", "second", "third", "forth"];
 
@@ -112,14 +112,14 @@ var countdown = function (seconds) {
             var wrongAnswers = 0;
             var unAnswered = 0;
 
-            
+
             for (var i = 0; i < 10; i++) {
 
                 if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === questions[i].correct) {
 
                     correctAnswers++;
                     console.log("this is correct! number:" + i)
-                }else if($('input:radio[name="' + questions[i].name + '"]:checked').val() === ""){
+                } else if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === "") {
                     unAnswered++;
                 } else {
                     wrongAnswers++;
@@ -131,17 +131,22 @@ var countdown = function (seconds) {
             $('#wrongTimesUp').append(wrongAnswers);
             $('#timesUp').fadeIn(1000).show();
 
-            
+
             clearInterval(timer);
             return;
         }
     }, 1000);
 
-    
+
     $('#sub-but').on('click', function () {
         clearInterval(timer);
     })
 };
+
+$("#retry-btn").on('click', function () {
+    $(this).parent().hide();
+    $("#splashscreen").show();
+});
 
 
 
@@ -151,13 +156,13 @@ var gradeQuiz = $('#sub-but').on('click', function () {
     var wrongAnswers = 0;
     var unAnswered = 0;
 
-    
+
     for (var i = 0; i < 10; i++) {
 
         if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === questions[i].correct) {
 
             correctAnswers++;
-        }else if($('input:radio[name="' + questions[i].name + '"]:checked').val() === ""){
+        } else if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === "") {
             unAnswered++;
         } else {
             wrongAnswers++;
@@ -166,13 +171,13 @@ var gradeQuiz = $('#sub-but').on('click', function () {
 
 
     countdown();
-    
+
     $('.container').fadeOut(500);
-   
+
     $('#answerScreen').show();
-    
+
     $('#correctScreen').append(correctAnswers);
-    
+
     $('#wrongScreen').append(wrongAnswers);
 
 });
