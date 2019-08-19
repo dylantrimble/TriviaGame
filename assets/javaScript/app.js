@@ -119,15 +119,12 @@ var countdown = function (seconds) {
 
                     correctAnswers++;
                     console.log("this is correct! number:" + i)
-                } else if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === "") {
-                    unAnswered++;
                 } else {
                     wrongAnswers++;
                     console.log("this is wrong! number:" + i)
                 };
             }
             $('#correctTimesUp').append(correctAnswers);
-            $('#unAnsweredTu').append(unAnswered);
             $('#wrongTimesUp').append(wrongAnswers);
             $('#timesUp').fadeIn(1000).show();
 
@@ -143,10 +140,10 @@ var countdown = function (seconds) {
     })
 };
 
-$("#retry-btn").on('click', function () {
-    $(this).parent().hide();
-    $("#splashscreen").show();
-});
+// $("#retry-btn").on('click', function () {
+//     $(this).parent().hide();
+//     $("#splashscreen").show();
+// });
 
 
 
@@ -162,8 +159,6 @@ var gradeQuiz = $('#sub-but').on('click', function () {
         if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === questions[i].correct) {
 
             correctAnswers++;
-        } else if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === "") {
-            unAnswered++;
         } else {
             wrongAnswers++;
         };
